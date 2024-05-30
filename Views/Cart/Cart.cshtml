@@ -1,0 +1,20 @@
+@model IEnumerable<Product?>
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        @if (Model != null)
+        {
+            <h1>@item!.ProductName</h1>
+        }
+
+    }
+
+
+</div>
